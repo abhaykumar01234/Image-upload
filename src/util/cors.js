@@ -4,7 +4,7 @@ module.exports = app => {
 	const cors = require("cors");
 	const corsOptions = {
 		origin: (origin, callback) => {
-			console.log(origin);
+			// console.log(origin);
 			if (!origin || process.env.WHITELIST.split(" ").indexOf(origin) !== -1) {
 				callback(null, true);
 			} else {
