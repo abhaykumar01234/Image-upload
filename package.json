@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "node index.js",
-    "start": "npm run server --prefix src",
-    "dev": "nodemon run server --prefix src"
+    "server": "node src/index.js",
+    "start": "npm run server",
+    "dev": "nodemon --exec npm run server"
   },
   "keywords": [],
   "author": "",
